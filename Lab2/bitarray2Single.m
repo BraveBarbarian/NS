@@ -36,7 +36,7 @@ function num = bitarray2Single(bitArray)
    
     if ExpDez == 0 % Denormalisierte Zahl (inklusive der Zahl 0)
         num = vorzeichen * (0+M_wert) * 2^Emin;
-    elseif ExpDez == 225 % Alle Exponenten 1
+    elseif ExpDez == 255 % Alle Exponenten 1
         % Sonderfälle: Inf oder NaN
         if M_wert == 0
             num = vorzeichen * Inf;
